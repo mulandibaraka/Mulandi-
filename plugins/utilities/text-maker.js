@@ -11,7 +11,7 @@ exports.run = {
    }) => {
       try {
          if (command == 'textmaker') {
-            if (!text) return client.reply(m.chat, Func.example(isPrefix, command, 'neoxr bot'), m)
+            if (!text) return client.reply(m.chat, Func.example(isPrefix, command, 'spike bot'), m)
             if (text.length > 10) return client.reply(m.chat, Func.texted('bold', `🚩 Text is too long max 10 characters.`), m)
             client.sendReact(m.chat, '🕒', m.key)
             const style = ['blackpink', 'blood', 'breakwall', 'glow', 'joker', 'magma', 'matrix', 'multicolor', 'neon', 'papercut', 'slice']
