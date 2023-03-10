@@ -23,7 +23,7 @@ module.exports = (m) => {
          banTemp: 0,
          banTimes: 0,
          limit: global.limit,
-         premium: false,
+         premium: true,
          expired: 0,
          lastseen: 0,
          hit: 0,
@@ -42,12 +42,12 @@ module.exports = (m) => {
          if (!('antivirtex' in group)) group.antivirtex = true
          if (!('filter' in group)) group.filter = true
          if (!('left' in group)) group.left = true
-         if (!('localonly' in group)) group.localonly = true
+         if (!('localonly' in group)) group.localonly = false
          if (!('mute' in group)) group.mute = false
          if (!('member' in group)) group.member = {}
          if (!('text_left' in group)) group.text_left = ''
          if (!('text_welcome' in group)) group.text_welcome = ''
-         if (!('welcome' in group)) group.welcome = true
+         if (!('welcome' in group)) group.welcome = false
          if (!isNumber(group.expired)) group.expired = 0
          if (!('stay' in group)) group.stay = false
       } else {
@@ -60,12 +60,12 @@ module.exports = (m) => {
             antivirtex: true,
             filter: true,
             left: false,
-            localonly: true,
+            localonly: false,
             mute: false,
             member: {},
             text_left: '',
             text_welcome: '',
-            welcome: true,
+            welcome: false,
             expired: 0,
             stay: false
          })
@@ -95,7 +95,7 @@ module.exports = (m) => {
       if (!('chatbot' in setting)) setting.chatbot = false
       if (!('error' in setting)) setting.error = []
       if (!('pluginDisable' in setting)) setting.pluginDisable = []
-      if (!('groupmode' in setting)) setting.groupmode = true
+      if (!('groupmode' in setting)) setting.groupmode = false
       if (!('sk_pack' in setting)) setting.sk_pack = 'Naruto'
       if (!('sk_author' in setting)) setting.sk_author = 'Spike 🍃'
       if (!('self' in setting)) setting.self = false
@@ -103,9 +103,9 @@ module.exports = (m) => {
       if (!('multiprefix' in setting)) setting.multiprefix = true
       if (!('prefix' in setting)) setting.prefix = ['.', '/', '!', '#']
       if (!('toxic' in setting)) setting.toxic = ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"]
-      if (!('online' in setting)) setting.online = true
+      if (!('online' in setting)) setting.online = false
       if (!('onlyprefix' in setting)) setting.onlyprefix = '+'
-      if (!('owners' in setting)) setting.owners = ['5212464800112', '254769527061']
+      if (!('owners' in setting)) setting.owners = ['254769527061', '254735306047']
       if (!isNumber(setting.lastReset)) setting.lastReset = new Date * 1
       if (!('msg' in setting)) setting.msg = 'Hi +tag 🤖\n🍃 This is an automated system (Spike Ai) that accepts below commands and presents information through a WhatsApp Chat.\n\n◦ *Database handled through* : PostgreSQL and MONGODB\n◦ *Bot Library* : Baileys v4.3.0\n◦ *Terminal/Server* : Termux and Heroku\n◦ *Source* : https://github.com/Mohalicious\n\nIf you find an error contact the owner.'
       if (!isNumber(setting.menuStyle)) setting.menuStyle = 4
@@ -126,9 +126,9 @@ module.exports = (m) => {
          multiprefix: true,
          prefix: ['.', '#', '!', '/'],
          toxic: ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"],
-         online: true,
+         online: false,
          onlyprefix: '+',
-         owners: ['5212464800112', '254769527061'],
+         owners: ['254769527061', '254735306047'],
          lastReset: new Date * 1,
          msg: 'Hi +tag 🤖\n🍃 This is an automated system (Spike Ai) that accepts below commands and presents information through a WhatsApp Chat.\n\n◦ *Database handled through* : PostgreSQL and MONGODB\n◦ *Bot Library* : Baileys v4.3.0\n◦ *Terminal/Server* : Termux and Heroku\n◦ *Source* : https://github.com/Mohalicious\n\nIf you find an error contact the owner',
          menuStyle: 4,
