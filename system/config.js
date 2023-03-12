@@ -1,7 +1,7 @@
 // Owner number
-global.owner = '254769527061'
+global.owner = '254768827492'
 // Owner name
-global.owner_name = 'Naruto 🗿🚬'
+global.owner_name = 'Mulandi 🗿💻'
 // Maximum upload file size limit (Default : 50 MB)
 global.max_upload = 5000
 // Delay for spamming protection (Default : 3 seconds)
