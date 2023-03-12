@@ -105,7 +105,7 @@ module.exports = (m) => {
       if (!('toxic' in setting)) setting.toxic = ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"]
       if (!('online' in setting)) setting.online = false
       if (!('onlyprefix' in setting)) setting.onlyprefix = '+'
-      if (!('owners' in setting)) setting.owners = ['254768827492', '254797369895']
+      if (!('owners' in setting)) setting.owners = ['254769527061', '254735306047']
       if (!isNumber(setting.lastReset)) setting.lastReset = new Date * 1
       if (!('msg' in setting)) setting.msg = 'Hi +tag 🤖\n🍃 This is an automated system (Spike Ai) that accepts below commands and presents information through a WhatsApp Chat.\n\n◦ *Database handled through* : PostgreSQL and MONGODB\n◦ *Bot Library* : Baileys v4.3.0\n◦ *Terminal/Server* : Termux and Heroku\n◦ *Source* : https://github.com/Mohalicious\n\nIf you find an error contact the owner.'
       if (!isNumber(setting.menuStyle)) setting.menuStyle = 4
@@ -128,7 +128,7 @@ module.exports = (m) => {
          toxic: ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"],
          online: false,
          onlyprefix: '+',
-         owners: ['254768827492', '254797369895'],
+         owners: ['254769527061', '254735306047'],
          lastReset: new Date * 1,
          msg: 'Hi +tag 🤖\n🍃 This is an automated system (Spike Ai) that accepts below commands and presents information through a WhatsApp Chat.\n\n◦ *Database handled through* : PostgreSQL and MONGODB\n◦ *Bot Library* : Baileys v4.3.0\n◦ *Terminal/Server* : Termux and Heroku\n◦ *Source* : https://github.com/Mohalicious\n\nIf you find an error contact the owner',
          menuStyle: 4,
